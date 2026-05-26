@@ -1,11 +1,12 @@
 import random
 
 # Generate a random integer between a range
+# breakpoint()
 random_number = random.randint(1, 100)
 
 # Get the user input
 user_input = input("Guess a number between 1 and 100: ")
-user_guess = int(user_input)
+luser_guess = int(user_input)
 print(F"user guess {user_guess}")
 
 # Ask the user if they think they are higher or lower than the number

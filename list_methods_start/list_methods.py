@@ -1,7 +1,6 @@
 student_grades = [88, 65, 91, 72, 98]
 
-print("Our student grades are: ")
-print(student_grades)
+print("Our student grades are:", student_grades)
 
 print("Our student grades sorted are: ")
 student_grades.sort(reverse=True)
@@ -14,10 +13,12 @@ print("After we've added grades, the new list is: ")
 print(student_grades)
 
 # Let's remove a few items from the list.
-student_grades.pop(3) # remove at index 2
+one_grade = student_grades.pop(3) # remove at index 2
 student_grades.remove(98) # remove the value 98 from the list.
 print("After we've removed grades, the new list is: ")
 print(student_grades)
+
+print(f'The grade we popped out was: {one_grade}')
 
 # Show students the value error on the next line.
 # student_grades.remove(9001)

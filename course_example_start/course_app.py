@@ -38,3 +38,24 @@ if __name__ == "__main__":
 
     print(course)
 
+    print(f"Course Average: {course.get_course_average()}")
+
+    # Comparison example (added a custom __eq__ to the student class)
+    student1 = course.students[0]
+    submission_student = course.students[0].submissions[0].student
+    student_one = Student(1, "Dan")
+
+    if student1 == student_one:
+        print("This be the same!")
+    else:
+        print("No equals") 
+
+    # Sorting Example (added a custom sorting to the Submissions class)
+
+    student_submissions = course.students[0].submissions
+
+    ascending_submissions = sorted(student_submissions)
+
+    for submission in ascending_submissions:
+        print(submission)
+

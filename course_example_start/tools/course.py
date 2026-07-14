@@ -29,3 +29,14 @@ class Course:
                 return assignment
         # if nothing matches and the for loop finishes without a match
         return None
+    
+    def get_course_average(self) -> float:
+        total = 0
+        number_of_submissions = 0
+
+        for student in self.students:
+            for submission in student.submissions:
+                total += submission.grade
+                number_of_submissions += 1
+
+        return total / number_of_submissions

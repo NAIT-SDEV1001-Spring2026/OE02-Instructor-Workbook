@@ -24,7 +24,7 @@ def load_ufo_data(filepath):
             sightings.append(row)
     return sightings
 
-@app.route('/ufo_sightings', methods=['GET'])
+@app.route('/sightings', methods=['GET'])
 def get_sightings():
     scrubbed_sightings = load_ufo_data('data/scrubbed.csv')
     return jsonify(scrubbed_sightings)
